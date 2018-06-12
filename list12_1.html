@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>jQueryの練習</title>
+<meta charset="utf-8">
+<script src="jquery-3.3.1.min.js"></script>
+<!-- 画像を除き、HTMLタグを解析し、DOMが利用可能になったらfunction()の中の処理を実行する -->
+<!-- セレクタでmsg要素を取得し、スタイルを変更する -->
+<script>
+	$(document).ready(function() {
+		$("#msg").css("font-size","30px");
+	})
+</script>
+</head>
+<body>
+	<p id="msg">こんにちは</p>
+</body>
+</html>
