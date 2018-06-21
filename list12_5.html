@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>JavaScriptの練習</title>
+<meta charset="utf-8">
+<script src="jquery-3.3.1.min.js"></script>
+
+<!-- <p>要素以降に現れる<a>要素すべてに対してスタイルを適用する。
+「TOPへ」リンクは<p>要素の兄弟ではなく子要素なので対象外となる -->
+
+<script>
+	$(function () {
+		$("p~a").css("font-size","30px")
+	})
+</script>
+</head>
+<body>
+	<p>ヘッダ</p>
+	<a href="prev.html">前ページへ</a>
+	<a href="prev.html">次ページへ</a>
+	<p>本文
+		<a href="index.html">TOPへ</a></p>
+</body>
+</html>
