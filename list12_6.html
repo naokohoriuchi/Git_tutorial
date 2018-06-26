@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>JavaScriptの練習</title>
+<meta charset="utf-8">
+<script src="jquery-3.3.1.min.js"></script>
+<!-- IDが「fruits」の要素を親として持つ<li>要素をすべて取得し、セレクタで取得した<li>要素のうち
+先頭の要素を抽出する -->
+<script>
+	$(function() {
+		$("#fruits>li:first").css("background-color", "red");
+	});
+</script>
+</head>
+<body>
+	<ul id="fruits">
+		<li>りんご</li>
+		<li>みかん</li>
+		<li>いちご</li>
+		<li>ぶどう</li>
+		<li>いよかん</li>
+	</ul>
+</body>
+</html>
