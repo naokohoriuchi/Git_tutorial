@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>JavaScriptの練習</title>
+<meta charset="utf-8">
+<!-- セレクタが示す要素のうち指定した条件に該当しない要素を取得する。 -->
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+	$(function() {
+		$("#fruits > li:not(:first)").css("background-color", "red");
+	});
+</script>
+</head>
+<body>
+	<ul id="fruits">
+		<li>りんご</li>
+		<li>みかん</li>
+		<li>いちご</li>
+		<li>ぶどう</li>
+		<li>いよかん</li>
+	</ul>
+</body>
+</html>
