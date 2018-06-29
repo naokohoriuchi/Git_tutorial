@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>JavaScriptの練習</title>
+<meta charset="utf-8">
+<!-- セレクタで取得した要素を取得し変数elmに代入。
+elmに代入されているすべての要素の背景色を赤に変更し、偶数番目の要素の文字色を白に変更する -->
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+	$(function() {
+		var elm = $("#fruits>li");
+		elm.css("background-color", "red");
+		elm.filter(":even").css("color", "white");
+	});
+</script>
+</head>
+<body>
+	<ul id="fruits">
+		<li>りんご</li>
+		<li>みかん</li>
+		<li>いちご</li>
+		<li>ぶどう</li>
+		<li>いよかん</li>
+	</ul>
+</body>
+</html>
