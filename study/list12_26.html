@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>JavaScriptの練習</title>
+<meta charset="utf-8">
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- 1回目のクリックが行われたらイベントハンドラを削除し、その後ボタンを無効化する。
+disabledは属性名、属性値ともにdisabledを指定する。 -->
+<script>
+	$(function() {
+		$("#btn").on("click", sayHello);
+	});
+	function sayHello() {
+		alert("こんにちは");
+		$("#btn").off("click", sayHello);
+		$(this).attr("disabled", "disabled");
+	}
+</script>
+</head>
+<body>
+	<button id="btn">クリック</button>
+</body>
+</html>
